@@ -1,3 +1,5 @@
+//navigation code
+
 const navToggler = document.querySelector('.nav-toggler'); const navMenu = document.querySelector('.site-navbar ul'); const navLinks = document.querySelectorAll('.site-navbar a'); 
  allEventListners(); 
   function allEventListners() { 
@@ -6,6 +8,7 @@ const navToggler = document.querySelector('.nav-toggler'); const navMenu = docum
   function togglerClick() { navToggler.classList.toggle('toggler-open'); navMenu.classList.toggle('open'); } 
   function navLinkClick() { if(navMenu.classList.contains('open')) { navToggler.click(); } };
  
+ //slide show javascript
 let slideIndex = 0;
 showSlides();
 
@@ -27,7 +30,7 @@ function showSlides() {
   setTimeout(showSlides, 2000);
 };
 
-
+//form validation javascript
 function validateForm() {
   let x = document.forms["myForm"]["fname"].value;
   if (x == "") {
@@ -35,6 +38,7 @@ function validateForm() {
     return false;
   }
 };
+//greeting javascript
 const greeting = document.getElementById('greeting');
 const hour = new Date().getHours();
 const welcomeTypes = ['Good morning', 'Good afternoon', 'Good evening'];
@@ -45,24 +49,5 @@ if (hour < 12) welcomeText = welcomeTypes[0]; else if (hour < 18) welcomeText = 
  
 greeting.innerHTML = welcomeText;
 
-function myFunction() {
-  alert("Self motivated Ability to work under pressureHobbies I like reading novels, Analyzing information and things around me, I like watching series and listening to music!!!");
-}
-
- function myFunction1() {
-  alert("ABOUT PROJECT____StudyEbuddy was programmed to track the studect progress on their studies");
-}
-function myFunction2() {
-  alert("ABOUT PROJECT____My Portfolio Website ,One of my school projects where i was asked to design my web portfolio");
-}
-
-function myFunction3() {
-  alert("ABOUT PROJECT____Designing the Graphic of Fake Product,Fake is a brand name which i got to design the back cover of the bottle");
-}
-
-function myFunction4() {
-  alert("ABOUT PROJECT____Designing the Graphic of Allula Product,Allura is a face lotion and i was behind the designing of the cover");
-}
-
-
+//Modal start
 

@@ -1,0 +1,108 @@
+
+
+    /* Some skills css*/
+}
+.box{
+  float:left;
+  text-align: center;
+  width:33%;
+  background: black;
+      
+}
+@media only screen and (max-width: 300px){
+	.box{
+		width:100%;
+		display:inline;
+		}
+		}
+@media only screen and (max-width: 300px){
+	.sect,{
+		width:100%;
+		display:inline;
+		}
+		}
+@media only screen and (max-width: 768px){   
+   {
+  }
+  .responsive{
+  width:100%;
+  }
+  .gallery{
+  width:100%;
+  }
+  .gallery img{
+     width: 100%;
+     height: 50%
+ 
+
+  }
+} 
+
+  /*skill bar css */
+
+}
+  h2{
+      margin-bottom:40px;
+      letter-spacing:2px;
+      color:#55c1ff;
+  }
+.details{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:10px;
+}
+.bar{
+    position:relative;
+    background-color:#1e243cc8 ;
+    padding: 7px 10px;
+    border-radius : 20px;
+    background-filter:blur(10px);
+}
+
+.bar div{
+    position:relative;
+    width:100%;
+    height:5px;
+    border-radius:10px;
+    background-color:#55c1ff;
+    border: 1px solid #15a1ff;
+    
+}
+#css-bar{
+  animation:css-fill 2s forwards;
+}
+@keyframes css-fill{
+ 100%{
+     width:90%;
+ }
+}
+#html-bar{
+    animation:html-fill 2s forwards;
+}
+@keyframes html-fill{
+ 100%{
+     width:85%;
+ }
+ }
+ #graphic-bar{
+    animation:graphic-fill 2s forwards;
+}
+@keyframes graphic-fill{
+ 100%{
+     width:65%;
+ }
+ }
+ #c-bar{
+    animation:c-fill 2s forwards;
+}
+@keyframes c-fill{
+ 100%{
+     width:80%;
+ }
+
+}
+.responsive{
+float : left;
+display: inline;
+}

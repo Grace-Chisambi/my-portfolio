@@ -1,5 +1,5 @@
 body{
-   background: url(f.png );
+   background:#000000;
    text-align:center; 
    margin: 0;
    padding: 0;
@@ -13,15 +13,35 @@ body{
    background:transparent;
    border-radius: 30px;
    font-size: 3rem;
-   color: #ADFF2F;
+   color:#55c1ff;
+
   
-    /* Some skills css*/
+    /* div sect css*/
 }
-#edit{
-    border-radius:30px;
-    background: #000000;
-    color:#fff100;
+.sect{
+    float:left;
+    width:50%;
+    float:left;
    
+}
+.tooltip{
+  position: relative;
+  display : inline-block;
+  border-bottom : 1px dotted blue;
+}
+.tooltip .tooltext{
+  visibility: hidden;
+  width: 250px;
+  background-color : white;
+  color:black;
+  text-align:center;
+  border-radius : 6px;
+  padding : 5px 0;
+  position: absolute;
+  z-index : 1;
+}
+.tooltip:hover .tooltext{
+visibility : visible;
 }
 
  #list {
@@ -55,7 +75,7 @@ body{
   background: black;
  
 }
-
+   
 /* navbar regular css start */
 .navbar-area {
   background: black;
@@ -202,51 +222,6 @@ img {vertical-align: middle;
   to {opacity: 1}
 }
 
-/* On smaller screens decrease size of text */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-.main{
-    align:center;
-}
-input{
-width:90%;
-height:45px;
-border-radius:5px;
-}
-.main button{
-width:90%;
-height:45px;
-border-radius:5px;
-background:orange;
-
-}
-
-footer{
-  padding:20px;
-  margin-top:20px;
-  color:#ffffff;
-  background-color:#ff0073;
-  text-align: center;
-
-  }
-#showcase{
-  min-height:300px;
-  background:url("showcase.jpg") no-repeat;
-  background-position: center;
-  background-size: cover;
-  text-align:center;
-  color:#ffffff;
-
-}
-footer{
-  
-  color:white;
-  background-color:black;;
-  text-align: center;
-  text-decolation:none;
-  
-}
 
 /* form css  */
 .form.box{
@@ -259,6 +234,7 @@ footer{
   height:420px;
   overflow:hidden;
   z-index:2;
+ 
   
 }
 .register-container{
@@ -319,7 +295,7 @@ h3{
 	
 }
 .submit:hover{
-	background:green;
+	background:#55c1ff;
 	box-shadow:1px;
 }
 .two-col{
@@ -340,7 +316,8 @@ h3{
 
 @media(max-width: 768px){
   .two-form,
-  .box,
+  .box,  
+  .sect,
   .header-area,
   .mySidebar{
     float:none;
@@ -348,15 +325,15 @@ h3{
     width:100%;
   }
   #sample{
-      width:50%;
-  }
+      width:50%  }
   .submit{
       width:90%;
       
   }
   .input-field{
       width:80%;
-      text-align:center;
+      text-align:center;;
+
   }
 }
 @media only screen and (max-width: 300px){
@@ -365,42 +342,11 @@ h3{
 		display:inline;
 		}
 		}
-@media only screen and (max-width: 768px){   
-   {
-  }
-  .responsive{
-  width:100%;
-  }
-  .gallery{
-  width:100%;
-  }
-  .gallery img{
-     width: 100%;
-     height: 50%
-  }
-} 
+@media only screen and (max-width: 300px){
+	.sect{
+		width:100%;
+		display:inline;
+		}
+           }
 
   
- /*   projects css  */
- 
-}
-#butt{
- margin-right: 10px;
- border-radius: 30px;
- background: #000000;
- font-size:30px;
- height:70px;
- text-shadow: .2em .2em .3em silver;
- border-radius: 50px;
- color:#fff100;
- font-weight:50px;
- }
-#map {
-    height: 100%;
-  }
-  html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
